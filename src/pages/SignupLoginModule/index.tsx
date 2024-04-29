@@ -84,7 +84,7 @@ const SignupLoginModulePage: React.FC = () => {
             className="md:text-3xl sm:text-[28px] text-[32px] text-blue_gray-900"
             size="txtGilroySemiBold32"
           >
-            Sign in to DhiWise
+            Sign in to Naushik
           </Text>
           <div className="flex flex-col items-start justify-start w-full">
             <div className="flex flex-col gap-1.5 items-start justify-start rounded-lg w-full">
