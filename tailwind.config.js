@@ -1,0 +1,77 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        gray: {
+          50: "#f9fbff",
+          200: "#efefef",
+          300: "#e1e1e3",
+          700: "#666666",
+          900: "#0d1624",
+          "50_01": "#fafcff",
+          "700_11": "#55555511",
+          "900_01": "#11142d",
+        },
+        black: {
+          900: "#000000",
+          "900_b2": "#000000b2",
+          "900_3f": "#0000003f",
+          "900_01": "#130e00",
+          "900_0c": "#0000000c",
+        },
+        red: {
+          200: "#fa9a9a",
+          600: "#eb304a",
+          700: "#d03329",
+          "700_01": "#e4222e",
+        },
+        blue: {
+          50: "#e0ebff",
+          200: "#a6c8ff",
+          A700: "#0061ff",
+          A200: "#4d90ff",
+          A700_01: "#0a58ff",
+        },
+        light_blue: {
+          100: "#b0e5fc",
+          400: "#1ba9ff",
+          A100: "#67d7fd",
+          A700: "#0086ed",
+        },
+        green: { 600: "#349765", A100: "#b5eacd" },
+        blue_gray: {
+          100: "#d6dae2",
+          200: "#bac1ce",
+          300: "#9ea8ba",
+          400: "#74839d",
+          500: "#747c89",
+          700: "#424c5d",
+          900: "#262b35",
+          "900_7f": "#3333337f",
+          "100_6c": "#d1d3d46c",
+          "700_01": "#535763",
+        },
+        white: { A700: "#ffffff" },
+      },
+      fontFamily: {
+        gilroy: "Gilroy",
+        opensans: "Open Sans",
+        inter: "Inter",
+        chivo: "Chivo",
+      },
+      boxShadow: {
+        bs2: "0px 4px  8px -4px #0000003f",
+        bs: "0px 0px  10px 4px #55555511",
+        bs1: "0px 4px  10px 4px #0000000c",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
